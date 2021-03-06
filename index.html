@@ -76,17 +76,20 @@
     </center>
     
     <div>
-      <video id="original">
-         <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
-      </video>
       
       <video id="circle">
         <source src="circle.mp4" type="video/mp4">
       </video>
+      
+      <video id="original">
+         <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
+      </video>
+      
+      
     </div>
     
     <p class="drop">-Adele Marchiando-</p>
-    <p>I actually linked a friendly PDF down 
+    <p>I actually linked a PDF down 
       <a href="AH369_CreativeAssignmentExplanation_TowardsConnection_AdeleMarchiando.pdf" target="_blank">
         here
       </a>
@@ -98,12 +101,15 @@
       var circle = document.getElementByID("circle");
 
       function playVid() { 
+        orig.style.zIndex(2);
         orig.play(); 
+        orig.style.zIndex(-1);
       }  
       
       function doSomething(id) {
         circle.style.zIndex(2);
         circle.play();
+        circle.style.zIndex(-1);
       }
         
     </script> 
