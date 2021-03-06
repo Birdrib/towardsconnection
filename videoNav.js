@@ -4,7 +4,7 @@ var circleGIF = document.getElementById("circleGIF");
 
 var button = document.getElementById("beginbutton");
 
-var vidid = ["null", "squiggle", "original", "squiggle"];
+var vidid = ["original", "squiggle", "original", "squiggle"];
 var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is start gif
 
 var index = 0;
@@ -16,7 +16,6 @@ function buttonPress() {
 	window.alert(index);
 	
 	//button.style.display="none";
-	button.value="I've been clicked"
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
 }  
