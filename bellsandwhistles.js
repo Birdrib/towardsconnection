@@ -5,8 +5,10 @@ var narration = [
 	"index is at 3"
 	];
 
+var static = "<br><br>this text doesn't go anywhere";
+
 function overlayon() {
-	document.getElementById("changingoverlay").innerHTML = narration[index];
+	document.getElementById("changingoverlay").innerHTML = narration[index].concat(static);
 	document.getElementById("overlay").style.display = "block";
 }
 
