@@ -1,4 +1,5 @@
 function overlayon() {
+	document.getElementById("changingoverlay").innerHTML = "test";
 	document.getElementById("overlay").style.display = "block";
 }
 
