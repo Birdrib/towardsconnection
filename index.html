@@ -71,7 +71,7 @@
     <center><span>TOWARDS CONNECTION</span></center>
     
     <center>
-      <button onclick="playVid()" type="button" class="button">begin</button>
+      <button onclick="playVid()" type="button" class="button">test</button>
       <button onclick="doSomething()" type="button" class="button">closer</button>
     </center>
     
@@ -81,9 +81,9 @@
         <source src="circle.mp4" type="video/mp4">
       </video>
       
-      <video id="original">
+      <!--video id="original">
          <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
-      </video>
+      </video-->
       
       
     </div>
@@ -101,7 +101,7 @@
       var circle = document.getElementByID("circle");
 
       function playVid() { 
-        orig.play(); 
+        circle.play(); 
       }  
       
       function doSomething() {
