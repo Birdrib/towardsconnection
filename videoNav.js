@@ -13,11 +13,12 @@ function buttonPress() {
 	index = index + 1;
 	if (index == end) {
 		index = 0;
+		button.innerHTML = "begin";
 	}
 	
 	advanceVideo();
 	
-	button.innerHTML = "continue"
+	button.innerHTML = "continue";
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
 }  
