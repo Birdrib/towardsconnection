@@ -33,9 +33,9 @@ function doSomething() {
       
 function shuffleDown() {
 	var vid = document.getElementById(vidid[index]);
-	var idle = document.getElementById(gifid[index]);
+	var idlegif = document.getElementById(gifid[index]);
 	vid.style.zIndex="-1";
-	idle.style.zIndex="-1";
+	idlegif.style.zIndex="-1";
 }
       
 function idle() {
