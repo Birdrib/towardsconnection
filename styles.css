@@ -81,9 +81,7 @@ img {
 	left: 50%;
 	font-family: hand; 
         font-size: 18; 
-        letter-spacing: 2px; 
-        font-weight: 700; 
-	color: white;
+	color: #FFFFFF;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 }
