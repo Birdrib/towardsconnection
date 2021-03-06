@@ -92,7 +92,9 @@ video {
 .dot {
 	width: 18px;
 	height: 18px;
-	margin-top: 6px;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .drop{
