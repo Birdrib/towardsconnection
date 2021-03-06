@@ -4,18 +4,20 @@ var circleGIF = document.getElementById("circleGIF");
 
 var button = document.getElementById("beginbutton");
 
-var vidid = ["squiggle", "original"];
-var gifid = ["circleGIF", "circleGIF"];
+var vidid = ["null", "squiggle", "original", "squiggle"];
+var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is start gif
 
-var index = -1;
+var index = 0;
       
 function buttonPress() { 
+	shuffleDown();
 	index = index + 1;
+	advanceVideo();
+	
 	//button.style.display="none";
 	button.value="I've been clicked"
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
-	advanceVideo();
 }  
       
 function advanceVideo() {
@@ -30,8 +32,10 @@ function doSomething() {
 }
       
 function shuffleDown() {
-	orig.style.zIndex="-1";
-	circleGIF.style.zIndex="-1";
+	var vid = document.getElementById(vidid[index]);
+	var idle = document.getElementById(gifid[index]);
+	vid.style.zIndex="-1";
+	idle.style.zIndex="-1";
 }
       
 function idle() {
