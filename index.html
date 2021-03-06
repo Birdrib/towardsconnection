@@ -40,7 +40,7 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="display("original")" type="button" class="button">toggle</button>
+      <button onclick="goaway()" type="button" class="button">hide</button>
     </center>
     
     <div style="text-align:center; vertical-align:middle;">
@@ -59,14 +59,8 @@
         orig.play(); 
       }  
       
-      function display(id) {
-        var vid = document.getElementById(id);
-        if (vid.style.display == 'block') {
-          vid.style.display = 'none';
-          vid.pause();
-        } else {
-          vid.style.display = 'block';
-        }
+      function goaway(id) {
+        $('#original').hide();      
       }
         
     </script> 
