@@ -4,14 +4,14 @@ var circleGIF = document.getElementById("circleGIF");
 
 var button = document.getElementById("beginbutton");
 
-var vidid = ["squiggle", "original"]
-var gifid = ["circleGIF", "circleGIF"]
+var vidid = ["squiggle", "original"];
+var gifid = ["circleGIF", "circleGIF"];
 
 var index = 0;
       
 function buttonPress() { 
 	index = index + 1;
-	button.style.display="none";
+	//button.style.display="none";
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
 	advanceVideo();
