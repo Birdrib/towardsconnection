@@ -89,6 +89,10 @@ video {
 	-ms-transform: translate(-50%,-50%);
 }
 
+.dot {
+	width: 25px;
+	height: 25px;
+}
 
 .drop{
 	margin-top: 560px;
