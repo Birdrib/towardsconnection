@@ -13,6 +13,7 @@ function buttonPress() {
 	shuffleDown();
 	index = index + 1;
 	advanceVideo();
+	window.alert(index);
 	
 	//button.style.display="none";
 	button.value="I've been clicked"
