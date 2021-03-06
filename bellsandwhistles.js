@@ -1,11 +1,11 @@
 var narration = [
-	"index is at 0",
-	"index is at 1",
-	"index is at 2",
-	"index is at 3"
+	"Welcome!<br>Press [begin] to start this thing.",
+	"squiggle squiggle!",
+	"circle!!!",
+	"Yeah,<br>this is gonna take a sec.<br>This is the orignial animation. It'll get broken up soon."
 	];
 
-var static = "<br><br>this text doesn't go anywhere";
+var static = "<br><br><br>this text doesn't go anywhere<br>eventually I'll write something nice here";
 
 function overlayon() {
 	document.getElementById("changingoverlay").innerHTML = narration[index].concat(static);
