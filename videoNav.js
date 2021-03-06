@@ -10,7 +10,7 @@ var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is
 var index = 0;
       
 function buttonPress() { 
-	window.alert(index);
+	//window.alert(index);
 	shuffleDown();
 	index = index + 1;
 	advanceVideo();
@@ -39,6 +39,5 @@ function shuffleDown() {
 }
       
 function idle() {
-	circleGIF.style.zIndex="2";
-	button.style.display="block";
+	document.getElementById(gifid[index]).style.zIndex="2";
 }
