@@ -11,9 +11,10 @@ function buttonPress() {
 	shuffleDown();
 	
 	index = index + 1;
-	//if (index == end) {
-	//	index = 0;
-	//}
+	if (index == end) {
+		index = 0;
+		//play an ending gif!!!! make this stop here
+	}
 	
 	advanceVideo();
 	
