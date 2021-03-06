@@ -80,14 +80,14 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="doSomething()" type="button" class="button">next</button>
+      <button onclick="doSomething()" type="button" class="button">continue</button>
     </center>
     
     <div>
       
       <img id="circleGIF" src="circle.gif">
       
-      <video id="squiggle">
+      <video id="squiggle" onended="idle()">
         <source src="squiggle.mp4" type="video/mp4">
       </video>
       
