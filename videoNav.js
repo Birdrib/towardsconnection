@@ -8,11 +8,17 @@ var vidid = ["original", "squiggle", "original", "squiggle"];
 var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is start gif
 
 var index = 0;
+var end = vidid.length;
       
 function buttonPress() { 
 	//window.alert(index);
 	shuffleDown();
+	
 	index = index + 1;
+	if (index == end) {
+		index = 0;
+	}
+	
 	advanceVideo();
 	
 	//button.style.display="none";
