@@ -1,7 +1,7 @@
 var button = document.getElementById("beginbutton");
 
-var vidid = ["original", "squiggle", "original", "squiggle"];
-var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is start gif
+var vidid = ["circle", "squiggle", "circle", "original"];
+var gifid = ["startGIF", "wait1", "wait2", "wait3"]; //first gif is start gif
 
 var index = 0;
 var end = vidid.length;
