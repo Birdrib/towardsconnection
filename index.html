@@ -72,7 +72,7 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="doSomething()" type="button" class="button">ahhh</button>
+      <button onclick="doSomething()" type="button" class="button">hmmm</button>
     </center>
     
     <div>
@@ -102,12 +102,11 @@
 
       function playVid() { 
         orig.play(); 
-        orig.onended = orig.style.zIndex="-1";
       }  
       
       function doSomething(id) {
+        circle.style.zIndex="2";
         circle.play();
-        circle.onended = circle.style.zIndex="-1";
       }
         
     </script> 
