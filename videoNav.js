@@ -1,7 +1,3 @@
-var orig = document.getElementById("original");
-var squiggle = document.getElementById("squiggle");
-var circleGIF = document.getElementById("circleGIF");
-
 var button = document.getElementById("beginbutton");
 
 var vidid = ["original", "squiggle", "original", "squiggle"];
@@ -21,7 +17,6 @@ function buttonPress() {
 	
 	advanceVideo();
 	
-	//button.style.display="none";
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
 }  
@@ -33,8 +28,7 @@ function advanceVideo() {
 }
 	
 function doSomething() {
-	shuffleDown();
-	squiggle.play();
+	window.alert(index);
 }
       
 function shuffleDown() {
