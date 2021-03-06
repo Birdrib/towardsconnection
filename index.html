@@ -101,15 +101,13 @@
       var circle = document.getElementByID("circle");
 
       function playVid() { 
-        orig.style.zIndex="2";
         orig.play(); 
-        orig.style.zIndex="-1";
+        orig.onended = orig.style.zIndex="-1";
       }  
       
       function doSomething(id) {
-        circle.style.zIndex="2";
         circle.play();
-        circle.style.zIndex="-1";
+        circle.onended = circle.style.zIndex="-1";
       }
         
     </script> 
