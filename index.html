@@ -38,7 +38,11 @@
 
   <h1>TOWARDS CONNECTION</h1>
     
-    <center><button onclick="playVid()" type="button" class="button">begin</button></center>
+    <center>
+      <button onclick="playVid()" type="button" class="button">begin</button>
+      <button onclick="hideStuff()" type="button" class="button">hide</button>
+      <button onclick="showStuff()" type="button" class="button">show</button>
+    </center>
     
     <div style="text-align:center; vertical-align:middle;">
       <video id="original" width="960" height="540">
@@ -47,14 +51,23 @@
     </div>
     
     <p>-Adele Marchiando-</p>
-    <p>I'm gonna try to link a PDF down here</p>
+    <p>I'm gonna try to link a PDF down here eventually</p>
     
     <script> 
-      var vid = document.getElementById("original"); 
+      var orig = document.getElementById("original"); 
 
       function playVid() { 
-        vid.play(); 
+        orig.play(); 
       }  
+      
+      function hide() {
+        orig.style.display = "none";
+      }
+        
+      function show() {
+        orig.style.display = "block";
+      }
+        
     </script> 
   
   </body>
