@@ -14,7 +14,6 @@ function buttonPress() {
 	index = index + 1;
 	if (index == end) {
 		index = 0;
-		bbutton.innerHTML = "begin";
 	}
 	
 	advanceVideo();
