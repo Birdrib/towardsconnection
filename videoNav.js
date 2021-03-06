@@ -6,14 +6,23 @@ var button = document.getElementById("beginbutton");
 
 var vidid = ["squiggle", "original"]
 var gifid = ["circleGIF", "circleGIF"]
+
+var index = 0;
       
 function buttonPress() { 
+	index = index + 1;
 	button.style.display="none";
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
-	squiggle.play();
+	advanceVideo();
 }  
       
+function advanceVideo() {
+	var vid = document.getElementById(vidid[index]);
+	vid.style.zIndex="1";
+	vid.play();
+}
+	
 function doSomething() {
 	shuffleDown();
 	squiggle.play();
