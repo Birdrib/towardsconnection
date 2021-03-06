@@ -72,7 +72,7 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="doSomething()" type="button" class="button">hmmmmmm</button>
+      <button onclick="doSomething()" type="button" class="button">closer</button>
     </center>
     
     <div>
@@ -104,9 +104,13 @@
         orig.play(); 
       }  
       
-      function doSomething(id) {
-        orig.style.zIndex="-1";
+      function doSomething() {
+        shuffleDown();
         circle.play();
+      }
+      
+      function shuffleDown() {
+        orig.style.zIndex="-1";
       }
         
     </script> 
