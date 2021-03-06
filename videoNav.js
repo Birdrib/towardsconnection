@@ -20,10 +20,10 @@ function buttonPress() {
 	advanceVideo();
 	
 	bbutton.innerHTML = "continue";
-	bbutton.classList.toggle("lightbutton");
-	bbutton.classList.toggle("darkbutton");
-	abutton.classList.toggle("lightbutton");
-	abutton.classList.toggle("darkbutton");
+	//bbutton.classList.toggle("lightbutton");
+	//bbutton.classList.toggle("darkbutton");
+	//abutton.classList.toggle("lightbutton");
+	//abutton.classList.toggle("darkbutton");
 }  
       
 function advanceVideo() {
