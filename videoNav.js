@@ -10,10 +10,10 @@ var gifid = ["circleGIF", "circleGIF", "circleGIF", "circleGIF"]; //first gif is
 var index = 0;
       
 function buttonPress() { 
+	window.alert(index);
 	shuffleDown();
 	index = index + 1;
 	advanceVideo();
-	window.alert(index);
 	
 	//button.style.display="none";
 	button.classList.toggle("lightbutton");
