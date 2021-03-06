@@ -19,14 +19,25 @@
   <body>
 
   <h1>TOWARDS CONNECTION</h1>
+    
+    <button onclick="playVid()" type="button">Play Video</button>
+    
     <div style="text-align:center; vertical-align:middle;">
-      <video width="960" height="540">
+      <video id="original" width="960" height="540">
          <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
       </video>
     </div>
     
     <p>-Adele Marchiando-</p>
     <p>I'm gonna try to link a PDF down here</p>
+    
+    <script> 
+      var vid = document.getElementById("original"); 
+
+      function playVid() { 
+        vid.play(); 
+      }  
+    </script> 
   
   </body>
 </html>
