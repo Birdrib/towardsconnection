@@ -1,4 +1,5 @@
-var button = document.getElementById("beginbutton");
+var bbutton = document.getElementById("beginbutton");
+var abutton = document.getElementById("aboutbutton");
 
 var vidid = ["circle", "squiggle", "circle", "original"];
 var gifid = ["startGIF", "wait1", "wait2", "wait3"]; //first gif is start gif
@@ -13,14 +14,16 @@ function buttonPress() {
 	index = index + 1;
 	if (index == end) {
 		index = 0;
-		button.innerHTML = "begin";
+		bbutton.innerHTML = "begin";
 	}
 	
 	advanceVideo();
 	
-	button.innerHTML = "continue";
-	button.classList.toggle("lightbutton");
-	button.classList.toggle("darkbutton");
+	bbutton.innerHTML = "continue";
+	bbutton.classList.toggle("lightbutton");
+	bbutton.classList.toggle("darkbutton");
+	abutton.classList.toggle("lightbutton");
+	abutton.classList.toggle("darkbutton");
 }  
       
 function advanceVideo() {
