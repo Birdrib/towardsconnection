@@ -49,18 +49,13 @@
          <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
       </video>
       
-      <video id="circle">
+      <!-- video id="circle">
         <source src="circle.mp4" type="video/mp4">
-      </video>
+      </video -->
     </div>
     
-    $('#circle').hide();
-    $('#original').on('ended',function(){ 
-    $('#circle').show();
-    });
-    
     <p>-Adele Marchiando-</p>
-    <p>I'm gonna try to link a PDF down here someday</p>
+    <p>I'm gonna try to link a PDF down here eventually</p>
     
     <script> 
       var orig = document.getElementById("original"); 
@@ -70,7 +65,7 @@
       }  
       
       function goaway(id) {
-        $('#original').hide();      
+        orig.hide();      
       }
         
     </script> 
