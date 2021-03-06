@@ -13,6 +13,8 @@ p {
 }
       
 body {
+	background-image: url(wiggles-05.png);
+	background-repeat: no-repeat;
 	background-color:#B5B7B8;
 }
       
