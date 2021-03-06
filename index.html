@@ -72,7 +72,7 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="doSomething()" type="button" class="button">pause-ibly?</button>
+      <button onclick="doSomething()" type="button" class="button">button</button>
     </center>
     
     <div>
@@ -80,13 +80,13 @@
          <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
       </video>
       
-      <!-- video id="circle">
+      <video id="circle">
         <source src="circle.mp4" type="video/mp4">
-      </video -->
+      </video>
     </div>
     
     <p class="drop">-Adele Marchiando-</p>
-    <p>I actually linked a PDF down 
+    <p>I actually linked a friendly PDF down 
       <a href="AH369_CreativeAssignmentExplanation_TowardsConnection_AdeleMarchiando.pdf" target="_blank">
         here
       </a>
@@ -94,14 +94,16 @@
       
     
     <script> 
-      var orig = document.getElementById("original"); 
+      var orig = document.getElementById("original");
+      var circle = document.getElementByID("circle");
 
       function playVid() { 
         orig.play(); 
       }  
       
       function doSomething(id) {
-        orig.pause();      
+        circle.style.zIndex(2);
+        circle.play();
       }
         
     </script> 
