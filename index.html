@@ -39,6 +39,14 @@
         margin-left: -480px;
       }
       
+      img {
+        width: 960px;
+        height: 540px;
+        position: absolute;
+        left: 50%;
+        margin-left: -480px;
+      }
+      
       .button {
         font-family: hand; 
         font-size: 18; 
@@ -71,14 +79,16 @@
     <center><span>TOWARDS CONNECTION</span></center>
     
     <center>
-      <button onclick="playVid()" type="button" class="button">tesst</button>
-      <button onclick="doSomething()" type="button" class="button">closer</button>
+      <button onclick="playVid()" type="button" class="button">begin</button>
+      <button onclick="doSomething()" type="button" class="button">new thing</button>
     </center>
     
     <div>
       
-      <video id="circle">
-        <source src="circle.mp4" type="video/mp4">
+      <img id="circleGIF" src="circle.gif">
+      
+      <video id="squiggle">
+        <source src="squiggle.mp4" type="video/mp4">
       </video>
       
       <video id="original">
@@ -98,19 +108,26 @@
     
     <script> 
       var orig = document.getElementById("original");
-      var circle = document.getElementById("circle");
+      var squiggle = document.getElementById("squiggle");
+      var circleGIF = document.getElementById("circleGIF");
 
       function playVid() { 
-        orig.play(); 
+        orig.play();
+        orig.onended = idle();
       }  
       
       function doSomething() {
         shuffleDown();
-        circle.play();
+        squiggle.play();
       }
       
       function shuffleDown() {
         orig.style.zIndex="-1";
+        circleGIF.style.zIndex="-1";
+      }
+      
+      function idle() {
+        circleGIF.style.zIndex="2";
       }
         
     </script> 
