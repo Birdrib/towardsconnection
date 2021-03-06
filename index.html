@@ -79,7 +79,7 @@
     <center><span>TOWARDS CONNECTION</span></center>
     
     <center>
-      <button onclick="playVid()" type="button" class="button">begin</button>
+      <button id="beginbutton" onclick="playVid()" type="button" class="button">begin...</button>
       <button onclick="doSomething()" type="button" class="button">continue</button>
     </center>
     
@@ -110,8 +110,11 @@
       var orig = document.getElementById("original");
       var squiggle = document.getElementById("squiggle");
       var circleGIF = document.getElementById("circleGIF");
+      var button = document.getElementById("beginbutton");
 
+      
       function playVid() { 
+        button.style.display="none";
         orig.play();
       }  
       
@@ -127,6 +130,7 @@
       
       function idle() {
         circleGIF.style.zIndex="2";
+        button.style.display="block";
       }
         
     </script> 
