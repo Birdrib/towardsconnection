@@ -80,7 +80,7 @@
     
     <center>
       <button onclick="playVid()" type="button" class="button">begin</button>
-      <button onclick="doSomething()" type="button" class="button">new thing</button>
+      <button onclick="doSomething()" type="button" class="button">next</button>
     </center>
     
     <div>
@@ -91,7 +91,7 @@
         <source src="squiggle.mp4" type="video/mp4">
       </video>
       
-      <video id="original">
+      <video id="original" onended="idle()">
          <source src="AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
       </video>
       
@@ -113,7 +113,6 @@
 
       function playVid() { 
         orig.play();
-        orig.onended = idle();
       }  
       
       function doSomething() {
