@@ -1,5 +1,4 @@
 var bbutton = document.getElementById("beginbutton");
-var abutton = document.getElementById("aboutbutton");
 
 var vidid = ["circle", "squiggle", "circle", "original"]; //first video is transition from end back to beginning
 var gifid = ["startGIF", "wait1", "wait2", "wait3"]; //first gif is start gif
@@ -21,8 +20,6 @@ function buttonPress() {
 	bbutton.innerHTML = "continue";
 	//bbutton.classList.toggle("lightbutton");
 	//bbutton.classList.toggle("darkbutton");
-	//abutton.classList.toggle("lightbutton");
-	//abutton.classList.toggle("darkbutton");
 }  
       
 function advanceVideo() {
@@ -30,11 +27,7 @@ function advanceVideo() {
 	vid.style.zIndex="1";
 	vid.play();
 }
-	
-function doSomething() {
-	window.alert(index);
-}
-      
+	  
 function shuffleDown() {
 	var vid = document.getElementById(vidid[index]);
 	var idlegif = document.getElementById(gifid[index]);
@@ -45,3 +38,8 @@ function shuffleDown() {
 function idle() {
 	document.getElementById(gifid[index]).style.zIndex="2";
 }
+
+function doSomething() { //for debugging
+	window.alert(index);
+}
+    
