@@ -1,39 +1,39 @@
-      @font-face{
-        font-family: "hand";
-        src: url("TheHandRegular.ttf");
-      }
+@font-face{
+	font-family: "hand";
+	src: url("TheHandRegular.ttf");
+}
       
-      p {
-        text-align: center; 
-        font-family: hand; 
-        font-size: 14pt; 
-        letter-spacing: 2px; 
-        font-weight: 700; 
-        margin-bottom: 0.5em;
-      }
+p {
+	text-align: center; 
+	font-family: hand; 
+	font-size: 14pt; 
+	letter-spacing: 2px; 
+	font-weight: 700; 
+	margin-bottom: 0.5em;
+}
       
-      body {
-        background-color:#B5B7B8;
-      }
+body {
+	background-color:#B5B7B8;
+}
       
-      span {
-        transform:scale(1.774,1);
-        -webkit-transform:scale(1.774,1);
-        display:inline-block; 
-        font-family: hand; 
-        font-size: 37pt; 
-        letter-spacing: 3px; 
-        font-weight: 400; 
-        margin-bottom: 0em;
-      }
+span {
+	transform:scale(1.774,1);
+	-webkit-transform:scale(1.774,1);
+	display:inline-block; 
+	font-family: hand; 
+	font-size: 37pt; 
+	letter-spacing: 3px; 
+	font-weight: 400; 
+	margin-bottom: 0em;
+}
       
-      video {
-        width: 960px;
-        height: 540px;
-        position: absolute;
-        left: 50%;
-        margin-left: -480px;
-      }
+video {
+	width: 960px;
+	height: 540px;
+	position: absolute;
+	left: 50%;
+	margin-left: -480px;
+}
       
 img {
 	width: 960px;
@@ -90,4 +90,8 @@ img {
 
 .drop{
 	margin-top: 560px;
+}
+
+.top {
+	z-index="1";
 }
