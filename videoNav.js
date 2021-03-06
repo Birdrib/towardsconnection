@@ -17,6 +17,7 @@ function buttonPress() {
 	
 	advanceVideo();
 	
+	button.innerHTML = "continue"
 	button.classList.toggle("lightbutton");
 	button.classList.toggle("darkbutton");
 }  
