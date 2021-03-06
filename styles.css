@@ -59,7 +59,7 @@ video {
 	height: 30px;
 }
 
-.lightbutton {background-color: rgba(255,255,255,0.8); color:#000000;}
+.lightbutton {background-color: #DDDDDD; color:#000000;}
 .lightbutton:hover {background-color: #000000; color: #FFFFFF;}   
 
 #overlay {
