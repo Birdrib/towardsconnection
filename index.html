@@ -25,10 +25,17 @@
     <div>
       
       <!-- load the starting GIF here first with top class so everything doesn't look bad as it loads -->
-      <img id="circleGIF" src="vids/circle.gif" class="top">
+      <img id="startGIF" src="vids/startcircle.gif" class="top">
+      <img id="wait1" src="vids/waiting1.gif">
+      <img id="wait2" src="vids/waiting2.gif">
+      <img id="wait3" src="vids/waiting3.gif">
       
       <video id="squiggle" onended="idle()">
         <source src="vids/squiggle.mp4" type="video/mp4">
+      </video>
+      
+      <video id="circle" onended="idle()">
+        <source src="vids/circle.mp4" type="video/mp4">
       </video>
       
       <video id="original" onended="idle()">
