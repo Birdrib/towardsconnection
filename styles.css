@@ -35,31 +35,33 @@
         margin-left: -480px;
       }
       
-      img {
-        width: 960px;
-        height: 540px;
-        position: absolute;
-        left: 50%;
-        margin-left: -480px;
-      }
+img {
+	width: 960px;
+	height: 540px;
+	position: absolute;
+	left: 50%;
+	margin-left: -480px;
+}
       
-      .button {
-        font-family: hand; 
-        font-size: 18; 
-        letter-spacing: 2px;
-        font-weight: 700; 
-        margin-bottom: 0.5em;
-        padding: 5px 10px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border: none;
-      }
-      
-      .button:hover {
-        background-color: #000000; 
-        color: #FFFFFF;
-      }      
-      
-      .drop{
-        margin-top: 560px;
-      }
+.button {
+	font-family: hand; 
+	font-size: 18; 
+	letter-spacing: 2px;
+	font-weight: 700; 
+	margin-bottom: 0.5em;
+	padding: 5px 10px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+}
+
+.lightbutton {background-color: #FFFFFF; color:#000000;}
+.lightbutton:hover {background-color: #000000; color: #FFFFFF;}   
+
+.darkbutton {background-color: #000000; color:#FFFFFF;}
+.darkbutton:hover {background-color: #FFFFFF; color: #000000;}  
+
+
+.drop{
+	margin-top: 560px;
+}
