@@ -78,7 +78,7 @@ video {
 
 .overlaytext{
 	position: fixed;
-	top: 250px;
+	margin-top: 250px;
 	left: 50%;
 	font-family: hand; 
         font-size: 14pt; 
