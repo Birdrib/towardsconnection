@@ -1,6 +1,6 @@
 var bbutton = document.getElementById("beginbutton");
 
-var vidid = ["circle", "l_ind", "l_coord", "l_org", "l_reor", "l_con", "end"]; //first video is transition from end back to beginning
+var vidid = ["loopback", "l_ind", "l_coord", "l_org", "l_reor", "l_con", "end"]; //first video is transition from end back to beginning
 var gifid = ["startGIF", "wait_l_ind", "wait_l_coord", "wait_l_org", "wait_l_reor", "wait_l_con", "wait_end"]; //first gif is start gif
 
 var index = 0;
