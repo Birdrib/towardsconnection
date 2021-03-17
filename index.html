@@ -32,20 +32,44 @@
       
       <!-- load the starting GIF here first with top class so everything doesn't look bad as it loads -->
       <img id="startGIF" src="vids/startcircle.gif" class="gifclass" style="z-index:2;">
-      <img id="wait1" src="vids/waiting1.gif" class="gifclass">
-      <img id="wait2" src="vids/waiting2.gif" class="gifclass">
-      <img id="wait3" src="vids/waiting3.gif" class="gifclass">
+      <img id="wait_l_ind" src="gifs/lightgif_ind.gif" class="gifclass">
+      <img id="wait_l_coord" src="gifs/lightgif_coord.gif" class="gifclass">
+      <img id="wait_l_org" src="gifs/lightgif_org.gif" class="gifclass">
+      <img id="wait_l_reor" src="gifs/lightgif_reor.gif" class="gifclass">
+      <img id="wait_l_con" src="gifs/lightgif_con.gif" class="gifclass">
+      <img id="wait_end" src="gifs/lightgif_end.gif" class="gifclass">
       
-      <video id="squiggle" onended="idle()">
-        <source src="vids/squiggle.mp4" type="video/mp4">
+      <video id="l_ind" onended="idle()">
+        <source src="orig_vids/orig1_ind.mp4" type="video/mp4">
       </video>
+      
+      <video id="l_coord" onended="idle()">
+        <source src="orig_vids/orig2_coord.mp4" type="video/mp4">
+      </video>
+      
+      <video id="l_org" onended="idle()">
+        <source src="orig_vids/orig3_org.mp4" type="video/mp4">
+      </video>
+      
+      <video id="l_reor" onended="idle()">
+        <source src="orig_vids/orig4_reor.mp4" type="video/mp4">
+      </video>
+      
+      <video id="l_con" onended="idle()">
+        <source src="orig_vids/orig5_con.mp4" type="video/mp4">
+      </video>
+      
+      <video id="end" onended="idle()">
+        <source src="orig_vids/orig6_end.mp4" type="video/mp4">
+      </video>
+      
+      
+      
+      
+      <!-- OLD VIDEO, LEAVING HERE JUST CUZ -->
       
       <video id="circle" onended="idle()">
         <source src="vids/circle.mp4" type="video/mp4">
-      </video>
-      
-      <video id="original" onended="idle()">
-         <source src="vids/AH369_A2_TowardsConnection_AdeleMarchiando.mp4" type="video/mp4">
       </video>
   
     </div>
